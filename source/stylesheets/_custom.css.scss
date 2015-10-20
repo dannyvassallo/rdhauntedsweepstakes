@@ -1,7 +1,7 @@
 // Add custom css here or create more partials
 // and import them in all.css.scss!
 $yellow: #fdba12;
-
+$red: #ed1c24;
 
 @font-face {
     font-family: 'ravenscroftregular';
@@ -15,14 +15,39 @@ $yellow: #fdba12;
     font-style: normal;
 
 }
+
+@font-face {
+  font-family:'PlacardMT-Condensed';
+  src: url('../fonts/PlacardMT-Condensed_gdi.eot');
+  src: url('../fonts/PlacardMT-Condensed_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PlacardMT-Condensed_gdi.woff') format('woff'),
+    url('../fonts/PlacardMT-Condensed_gdi.ttf') format('truetype'),
+    url('../fonts/PlacardMT-Condensed_gdi.svg#PlacardMT-Condensed') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
+
 html, body{
   height: 100%;
 }
 
-h1{
+h1, .limit{
   font-family: 'ravenscroftregular'; 
   text-transform: uppercase;
   color: $yellow;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2{
+  font-family: 'PlacardMT-Condensed';
+  text-transform: uppercase;
+  color: white;
+  font-weight: light;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 body{
@@ -46,6 +71,13 @@ body{
   z-index: -9999999;
 }
 
+.rules{
+  margin: 20px auto;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
 
 .mansion{
   background-image: url('https://s3.amazonaws.com/myfangate.com/rdhauntedsweepstakes/repeating-green.jpg');
@@ -95,4 +127,18 @@ body{
 
 .header{
   margin-top: 25px;
+  margin-bottom: 30px;
 }  
+
+.hashtag{
+  color: $red;
+  margin-bottom: 40px;
+}
+
+.list-item{
+  margin-bottom: 10px;
+}
+
+.insta{
+  margin-top: 20px;
+}
