@@ -1,0 +1,43 @@
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+        .snapshots{
+            margin-top: -45%;
+        }    
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+        .snapshots{
+            margin-top: -40%;
+        } 
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+        .snapshots{
+            margin-top: -40%;
+        } 
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        .snapshots{
+            margin-top: -30%;
+        }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+        .snapshots{
+            margin-top: -25%;
+        }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1700px) {
+        .snapshots{
+            margin-top: -17%;
+        }
+    }
