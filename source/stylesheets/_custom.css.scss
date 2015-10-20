@@ -1,2 +1,144 @@
 // Add custom css here or create more partials
 // and import them in all.css.scss!
+$yellow: #fdba12;
+$red: #ed1c24;
+
+@font-face {
+    font-family: 'ravenscroftregular';
+    src: url('../fonts/ravenscroft-webfont.eot');
+    src: url('../fonts/ravenscroft-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ravenscroft-webfont.woff2') format('woff2'),
+         url('../fonts/ravenscroft-webfont.woff') format('woff'),
+         url('../fonts/ravenscroft-webfont.ttf') format('truetype'),
+         url('../fonts/ravenscroft-webfont.svg#ravenscroftregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family:'PlacardMT-Condensed';
+  src: url('../fonts/PlacardMT-Condensed_gdi.eot');
+  src: url('../fonts/PlacardMT-Condensed_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PlacardMT-Condensed_gdi.woff') format('woff'),
+    url('../fonts/PlacardMT-Condensed_gdi.ttf') format('truetype'),
+    url('../fonts/PlacardMT-Condensed_gdi.svg#PlacardMT-Condensed') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
+
+html, body{
+  height: 100%;
+}
+
+h1, .limit{
+  font-family: 'ravenscroftregular'; 
+  text-transform: uppercase;
+  color: $yellow;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2{
+  font-family: 'PlacardMT-Condensed';
+  text-transform: uppercase;
+  color: white;
+  font-weight: light;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body{
+  font-family: 'ravenscroftregular'; 
+}
+
+.full-w{
+  width: 100%;
+}
+
+.background-fix{
+  background-image: url('https://s3.amazonaws.com/myfangate.com/rdhauntedsweepstakes/repeating-black.jpg');
+  background-repeat: repeat;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  z-index: -9999999;
+}
+
+.rules{
+  margin: 20px auto;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.mansion{
+  background-image: url('https://s3.amazonaws.com/myfangate.com/rdhauntedsweepstakes/repeating-green.jpg');
+  background-repeat: repeat;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 25px;  
+  &:after{
+    content:  "";
+    height: 118px;
+    width: 100%;    
+    position: absolute;
+    bottom: -25px;    
+    background: url('https://s3.amazonaws.com/myfangate.com/rdhauntedsweepstakes/repeatingtearup.png') repeat-x right;
+    z-index: 999;
+    left: 0;
+  }
+  &:before{
+    content: "";;
+    height: 118px;
+    width: 100%;    
+    position: absolute;
+    top: -25px; 
+    background: url('https://s3.amazonaws.com/myfangate.com/rdhauntedsweepstakes/repeatingteardown.png') repeat-x left;   
+    z-index: 999;
+    left: 0;
+  }  
+  img{
+    width: 100%;    
+    max-width: 900px;
+    position: relative;
+  }
+}
+
+.snapshots{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 9999;
+  margin-bottom: 10px;
+  img{
+    width: 100%;
+    max-width: 900px;
+  }
+}
+
+.header{
+  margin-top: 25px;
+  margin-bottom: 30px;
+}  
+
+.hashtag{
+  color: $red;
+  margin-bottom: 40px;
+}
+
+.list-item{
+  margin-bottom: 10px;
+}
+
+.insta{
+  margin-top: 20px;
+}
